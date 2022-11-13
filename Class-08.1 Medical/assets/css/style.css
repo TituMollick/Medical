@@ -1,0 +1,701 @@
+/* 
+  Titu Mollick
+  https://titumallick.com/  
+  Cancer Care Website
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Start Header Part CSS */
+/* Start Top Header Part CSS */
+#header{
+  height: 830px;
+  width: 100%;
+}
+#header .top_header{
+  height: 145px;
+  width: 100%;
+  background: white;
+}
+#header .top_header .logo{
+  height: 110px;
+  width: 23%;
+  float: left;
+}
+#header .top_header .logo a{
+  width: 300px;
+  height: 90px;
+  padding: 15px 0 0 0;
+  display: block;
+}
+#header .top_header .top_menu{
+  width: 54%;
+  float: left;
+  min-height: 60px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding-top: 40px;
+}
+#header .top_header .top_menu li{
+  float: left; position: relative;
+}
+#header .top_header .top_menu li a{
+  color: #636363;
+	text-decoration: none;
+	padding: 15px 25px;
+	display: block;
+  font-size: 18px;
+  font-weight: 200;
+}
+#header .top_header .top_menu li ul{
+  list-style-type: none;
+	padding: 0;
+	position: absolute;
+	left: -99999px;
+}
+#header .top_header .top_menu li:hover ul{
+  left: 0;
+}
+#header .top_header .top_menu li ul li{
+  background: #FAFAFA;
+  width: 240px;
+  margin-top: -4px;
+  float: none; 
+  position: relative;
+  z-index: 1; display: block;
+}
+#header .top_header .top_menu li ul li a{
+  color: #333; display: block;
+  text-decoration: none;
+}
+#header .top_header .top_menu li ul li a:hover{
+  color: #425CC7;
+}
+#header .top_header .top_search{
+  height: 45px;
+  width: 20%;
+  float: left;
+  padding-top: 45px;
+}
+#header form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 20px;
+}
+/* Style the submit button */
+#header form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: #FF4D00;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin-left: -50px;
+  border-radius: 0 20px 20px 0;
+}
+#header form.example button:hover {
+  background: #425CC7; transition: 0.3s;
+}
+#header form.example button:hover i{
+  color: white; transition: 0.3s;
+}
+/* Clear floats */
+#header form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* End Top Header Part CSS */
+/* End Main Menu Header Part CSS */
+#header .menu_part{
+  clear: both;
+  width: 100%;
+  height: 52px;
+  background: #425CC7;
+}
+#header .menu_part .main_menu{
+  width: 90%; margin: 0 auto;
+  min-height: 45px;
+  list-style-type: none;
+}
+#header .menu_part .main_menu li{
+  float: left;
+  margin: 0 6px; z-index: 1;
+  position: relative;  padding: 8px 10px;
+}
+#header .menu_part .main_menu li a{
+  color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+  font-size: 17px;
+}
+#header .menu_part .main_menu li a:hover{
+  color: #FFA600;
+  border-bottom: 5px solid #FF4D00;
+}
+#header .menu_part .main_menu li ul{
+  list-style-type: none;
+	padding: 0;
+	position: absolute;
+	left: -99999px;
+  z-index: 0; top: 51px;
+}
+#header .menu_part .main_menu li:hover ul{
+	left: 0;
+}
+#header .menu_part .main_menu li ul li{
+  float: none;
+	background: #425CC7;
+	width: 300px;
+	position: relative;
+}
+#header .menu_part .main_menu li ul li a{
+  text-decoration: none;
+	display: block;
+  color: white;
+}
+#header .menu_part .main_menu li ul li:hover{
+  background: #FFA600; 
+  border-bottom: none;
+}
+#header .menu_part .main_menu li ul li:hover a{
+  color: #0A1F8F;
+  border-bottom: none;
+}
+#header .menu_part .main_menu li ul li ul{
+  list-style-type: none;
+	padding: 0;
+	position: absolute;
+	top: -99999px;
+  z-index: 0; 
+  margin-left: 310px;
+}
+#header .menu_part .main_menu li ul li:hover ul{
+	top: 0;
+}
+#header .menu_part .main_menu li ul li ul li{
+  float: none;
+	background: #425CC7;
+	width: 300px;
+	position: relative;
+}
+/* Start Hero Part HTML */
+#header .hero_part{
+  height: 600px; width: 100%;
+  background-image: url(../img/hero_bg_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+/* End Header Part CSS */
+/* Start Find Part CSS */
+#find{
+  width: 100%;
+  height: 480px;
+}
+#find .find_part{
+  padding-top: 50px;
+}
+#find .find_part .find_icon{
+  width: 23%;
+  height: 400px;
+  background: #425CC7;
+  float: left;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+#find .find_part .find_icon img{
+  margin-left: 100px;
+  margin-top: 30px;
+  height: 100px; width: 100px;
+}
+#find .find_part .find_icon h2{
+  text-align: center;
+  font-size: 29px;
+  color: #FFF;
+  padding: 20px 0;
+}
+#find .find_part .find_icon h5{
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #FFF;
+  padding: 10px 0;
+}
+#find .find_part .find_icon form{
+  padding-left: 20px;
+}
+#find .find_part .find_icon form .select{
+  padding: 12px;
+  width: 265px;
+}
+#find .find_part .find_icon .find_con{
+  padding-top: 40px;
+  text-align: center;
+}
+#find .find_part .find_icon .find_con a{
+  font-size: 18px;
+  color: #FFA600;
+}
+#find .find_part .find_icon form .sebmit{
+  margin-top: 36px; margin-left: 10px;
+}
+#find .find_part .find_icon form .sebmit input{
+  height: 55px;
+  width: 245px;
+  border-radius: 25px;
+  font-size: 21px;
+  font-weight: 500;
+  color: #0A1F8F;
+  background: #FFA600;
+  transition: 0.4s;
+}
+#find .find_part .find_icon form .sebmit input:hover{
+  background: #EDF0F9;
+  transition: 0.4s;
+}
+/* End Find Part CSS */
+/* Start Cancer Care Part CSS */
+#cancer{
+  width: 100%;
+  height: 500px;
+}
+#cancer .cancer_part{
+  padding-left: 20px;
+}
+#cancer .cancer_part .cancer_img{
+  float: left; width: 48%; padding: 0 10px;
+}
+#cancer .cancer_part .cancer_img img{
+  height: 450px; width: 98%;
+  border-radius: 10px; 
+}
+#cancer .cancer_part .cancer_head{
+  float: left; width: 48%; margin: 10px;
+}
+#cancer .cancer_part .cancer_head h2{
+  padding: 20px 0;
+  font-size: 50px;
+  color: #001B71;
+}
+#cancer .cancer_part .cancer_head p{
+  padding: 10px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333333;
+}
+#cancer .cancer_part .cancer_head button{
+  margin: 25px 0 0 0;
+  background: none;
+  border: none;
+}
+#cancer .cancer_part .cancer_head button a{
+  font-size: 18px;
+  font-weight: 100;
+  color: #FF4D00;
+}
+/* End Cancer Care Part CSS */
+/* Start Choose Astera Part CSS */
+.choose{
+  padding-top: 25px;
+}
+.choose .choose_astera{
+  padding-top: 75px;
+}
+/* End Choose Astera Part CSS */
+/* Start Searvices Part CSS */
+#services{
+  width: 100%;
+  height: 950px;
+  padding: 30px 0;
+}
+#services h2{
+  padding-left: 30px;
+  font-size: 50px;
+  color: #001B71;
+}
+#services .services_part{
+  height: 350px;
+  padding: 30px 0 0 20px;
+}
+#services .services_part .services_title{
+  width: 27%;
+  height: 260px;
+  float: left;
+  padding: 30px 20px;
+  border-radius: 10px; 
+  margin: 0 18px;
+  border: 2px solid #001B71;
+}
+#services .services_part .services_title h3,
+#services .services_con .services_title h3{
+  padding: 15px 0;
+  font-size: 35px;
+  color: #0A1F8F;
+}
+#services .services_part .services_title p,
+#services .services_con .services_title p{
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
+}
+#services .services_part .services_title button,
+#services .services_con .services_title button{
+  margin-top: 20px;
+  border: none;
+  background: none;
+}
+#services .services_part .services_title button a,
+#services .services_con .services_title button a{
+  font-size: 18px;
+  font-weight: 100;
+  color: #FF4D00;
+}
+#services .services_con{
+  height: 530px;
+  padding: 10px 0 0 20px;
+}
+#services .services_con .services_title{
+  width: 27%;
+  height: 440px;
+  float: left;
+  padding: 30px 20px;
+  border-radius: 10px; 
+  margin: 0 18px;
+  border: 2px solid #001B71;
+}
+#services .services_con .services_title .text{
+  margin-top: 15px;
+}
+/* End Searvices Part CSS */
+/* 
+  Titu Mollick
+  https://titumallick.com/  
+  Cancer Care Website
+*/
+/* Start Question Part CSS */
+#question{
+  height: 250px; 
+  width: 97%;
+  margin: 0 0 0 35px;
+  background-image: url(../img/Have_Questions.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#question .question_head{
+  height: 250px; width: 48%;
+  float: left; padding-left: 20px;
+}
+#question .question_head h2{
+  padding: 60px 0 0 20px; 
+  font-size: 40px;
+  color: #FFF;
+}
+#question .question_contact{
+  height: 250px; width: 48%;
+  float: left; padding-left: 20px;
+}
+#question .question_contact h2{
+  padding: 55px 0 0 40px; 
+  font-size: 43px;
+  letter-spacing: 1.5px;
+  color: #FFF;
+}
+#question .question_contact button{
+  margin: 30px 0 0 140px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #FFA600;
+  transition: 0.4s;
+}
+#question .question_contact button a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #001B71;
+}
+#question .question_contact button:hover{
+  background: #edf0f9;
+  transition: 0.4s;
+}
+/* End Question Part CSS */
+/* Start Understanding Part CSS */
+#understanding{
+  width: 100%;
+  height: 380px;
+  padding: 80px 0 20px 0;
+}
+#understanding .understanding_part{
+  width: 30%;
+  height: 380px;
+  border-radius: 10px;
+  border-bottom: 10px solid #FF4D00;
+  margin-left: 35px;
+  background: #0A1F8F;
+  float: left;
+}
+#understanding .understanding_part .understanding_head{
+  padding: 40px;
+}
+#understanding .understanding_part .understanding_head h3{
+  color: #FFA600;
+  font-size: 32px;
+  padding: 10px 0;
+  border-bottom: 1px solid #0098C5;
+}
+#understanding .understanding_part .understanding_head a{
+  float: none;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  color: #FFF;
+  text-decoration: none;
+}
+/* End Understanding Part CSS */
+/* Start COVID-19 Updates Part CSS */
+#covid{
+  width: 97%;
+  height: 420px;
+  margin-left: 35px;
+  background: #0098C5;
+}
+#covid .covid_con{
+  padding: 70px 0 0 50px;
+}
+#covid .covid_con .covid_part{
+  float: left; width: 34%;
+}
+#covid .covid_con .covid_part img{
+  width: 95%; height: 30%;
+}
+#covid .covid_con .covid_head{
+  float: left; width: 64%;
+}
+#covid .covid_con .covid_head h3{
+  font-size: 30px;
+  font-weight: 100;
+  color: #FFF;
+  padding: 10px 0 20px 0;
+}
+#covid .covid_con .covid_head p{
+  font-size: 20px;
+  line-height: 1.5;
+  word-spacing: 2px;
+  color: #FFF;
+  padding: 10px 0 20px 0;
+}
+#covid .covid_con .covid_head button{
+  margin-top: 20px;
+  border: none;
+  background: none;
+}
+#covid .covid_con .covid_head button a{
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  color: #FFF;
+}
+/* End COVID-19 Updates Part CSS */
+/* Start Astera Support Blog Part CSS */
+#support{
+  width: 100%; 
+  height: 690px;
+}
+#support .support_part{
+  float: left;
+  margin: 50px 0;
+}
+#support .support_part{
+  width: 30%; 
+  height: 650px;
+  margin-left: 35px;
+}
+#support .support_part .support_img img{
+  width: 100%;
+  height: 14%;
+}
+#support .support_part .support_img_2 img{
+  width: 100%;
+  height: 270px;
+}
+#support .support_part .support_head{
+  padding-left: 10px;
+}
+#support .support_part .support_head h4{
+  font-size: 26px;
+  color: #425CC7;
+  padding: 20px 0;
+}
+#support .support_part .support_head p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  padding-bottom: 20px;
+}
+#support .support_part .support_head button{
+  margin-top: 20px;
+  border: none;
+  background: none;
+}
+#support .support_part .support_head button a{
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  color: #333;
+}
+/* End Astera Support Blog Part CSS */
+/* Start From Our Patients Part CSS */
+#testimonial{
+  width: 100%;
+  height: 560px;
+  background: #F6F6F6;
+}
+#testimonial .testimonial_head{
+  text-align: center;
+}
+#testimonial .testimonial_head h2{
+  font-size: 42px;
+  color: #001B71;
+}
+#testimonial .testimonial_head p{
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  color: #333;
+  padding: 20px 0 30px 0;
+}
+#testimonial .testimonial_part{
+  width: 65%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 4px solid #FF4D00;
+}
+#testimonial .testimonial_part p{
+  text-align: center;
+  font-size: 20px;
+  color: #425CC7;
+  line-height: 1.5;
+  padding: 50px 100px 30px;
+}
+#testimonial .testimonial_part h6{
+  text-align: center;
+  font-size: 26px;
+  font-weight: 100;
+  color: #0A1F8F;
+}
+#testimonial .testimonial_part .testimonial_icon{
+  float: left; 
+  padding-left: 388px;
+  padding-top: 25px;
+}
+#testimonial .testimonial_part .testimonial_icon a{
+  font-size: 18px;
+  color: #FFA600;
+}
+#testimonial .testimonial_part .testimonial_slider{
+  float: none;  
+  display: block;
+  padding-left: 437px;
+  padding-top: 70px;
+}
+#testimonial .testimonial_part .testimonial_slider a{
+  font-size: 12px;
+  color: #2A2A2A;
+}
+/* End From Our Patients Part CSS */
+/* Start Footer Part CSS */
+#footer{
+  width: 100%;
+  height: 400px;
+  background: #001B71;
+  position: relative;
+}
+#footer .footer_part{
+  padding: 50px 0;
+}
+#footer .footer_part .footer_logo{
+  float: left; width: 48%; 
+  height: 300px;               
+  padding-left: 15px;
+}
+#footer .footer_part .footer_logo img{
+  width: 46%; height: 30%;
+}
+#footer .footer_part .footer_logo p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #FFF;
+  padding-right: 155px;
+}
+/* Footer 2 */
+#footer .footer_part .footer_con{
+  float: left; width: 48%; 
+  height: 300px;               
+  padding-left: 15px;
+}
+#footer .footer_part .footer_con .footer_head{
+  float: left; 
+  width: 30%; height: 350px;
+}
+#footer .footer_part .footer_con .footer_head h6 a{
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+}
+#footer .footer_part .footer_con .footer_head .footer_link{
+  float: none;
+}
+#footer .footer_part .footer_con .footer_head .footer_link a{
+  display: block;
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight: 100;
+  color: #FFF;
+  text-decoration: none;
+}
+#footer .footer_part .footer_con .footer_head p{
+  display: block;
+  font-size: 17px;
+  color: #FFF;
+}
+#footer .footer_part .footer_con .footer_head .footer_icon{
+  padding-top: 20px;
+}
+#footer .footer_part .footer_con .footer_head .footer_icon a{
+  font-size: 20px;
+  color: #FFF;
+  margin: 0 5px;
+}
+/* Start CopyRight Area CSS */
+#footer .copyright {
+  position: absolute;
+  bottom: 25px; left: 20px;
+}
+#footer .copyright p{
+  margin-top: 15px;
+  color: #FFF;
+  letter-spacing: 1.2px;
+}
+#footer .copyright p a{
+  color: #FFF;
+  text-decoration: none;
+}
+/* End Footer Part CSS */
+/* 
+  Titu Mollick
+  https://titumallick.com/  
+  Cancer Care Website
+*/
